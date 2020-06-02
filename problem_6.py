@@ -20,17 +20,17 @@ class XORList:
         self.both = h,t
 
     def add(self,element):
-        if self.both[1] == None:
-            tail = XORList(element)
-            self.both = self.both[0], tail
-        else:
-            self.both[1].add(element)
-
+        pass
     def get(self, index):
-        if index == 0:
-            return self.both[0]
-        else:
-            return self.both[1].get(index-1)
+        pass
+
+def get_pointer(item):
+    add = bin(item) # pretending to reference item
+    return add
+
+def dereference_pointer(add):
+    item = int(add) # pretending to dereference address
+    return item
 
 head = XORList(1)
 head.add(2)
